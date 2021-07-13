@@ -14,6 +14,22 @@ const startButtons = {
     ],
   },
 };
+const afterHelpBtn = {
+  reply_markup: {
+    inline_keyboard: [
+      [
+        {
+          text: 'Тогда приступим!',
+          callback_data: 'go',
+        },
+        {
+          text: 'Не хочу!',
+          callback_data: 'nope',
+        },
+      ],
+    ],
+  },
+};
 const restartGoBtn = {
   reply_markup: {
     inline_keyboard: [[{ text: 'Ну ладно, уговорил!', callback_data: 'go' }]],
@@ -68,4 +84,5 @@ module.exports = {
   characterBtns,
   badMoodContinue,
   charactersMore,
+  afterHelpBtn,
 };
